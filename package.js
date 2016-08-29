@@ -1,6 +1,6 @@
 Package.describe({
   name: 'challett:autoform-image-select',
-  version: '0.0.0',
+  version: '0.0.3_1',
   summary: 'Single and multiple image selection widget for autoform',
   git: 'https://github.com/challett/meteor-autoform-image-select',
   documentation: 'README.md'
@@ -10,8 +10,9 @@ Package.onUse(function(api) {
   api.versionsFrom('METEOR@1.3');
 
   api.use('ecmascript');
-  api.use('templating@1.1.0');
-  api.use('blaze@2.1.8');
+  api.use('templating@1.0.0');
+  api.use('templating-tools');
+  api.use('blaze@2.0.0');
   api.use('aldeed:autoform@4.0.0 || 5.0.0');
 
   api.addFiles([
