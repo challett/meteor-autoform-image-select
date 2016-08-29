@@ -2,10 +2,10 @@
     <div class="autoform-image-select-container" {{atts}}>
         {{#each option in options}}
             <div class="image-select-option {{isOptionSelected option.value}}" data-value="{{option.value}}">
-                <div class="top-right check" style="display: {{#if (isOptionSelected option.value)}}block{{else}}none{{/if}}">
+                <div class="top-right check" style="display: {{#if isOptionSelected option.value}}block{{else}}none{{/if}}">
                     <i class="fa fa-check" aria-hidden="true"></i>
                 </div>
-                <div class="top-right circle" style="display: {{#if (isOptionSelected option.value)}}none{{else}}block{{/if}}">
+                <div class="top-right circle" style="display: {{#if isOptionSelected option.value}}none{{else}}block{{/if}}">
                     <i class="fa fa-circle-o" aria-hidden="true"></i>
                 </div>
                 <div class="rounded">

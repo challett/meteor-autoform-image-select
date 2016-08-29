@@ -10,8 +10,8 @@ Package.onUse(function(api) {
   api.versionsFrom('METEOR@1.3');
 
   api.use('ecmascript');
-  api.use('templating@1.0.0');
-  api.use('blaze@2.0.0');
+  api.use('templating@1.1.0');
+  api.use('blaze@2.1.8');
   api.use('aldeed:autoform@4.0.0 || 5.0.0');
 
   api.addFiles([
