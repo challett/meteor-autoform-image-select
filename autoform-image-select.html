@@ -1,0 +1,17 @@
+<template name="afImageSelect">
+    <div class="autoform-image-select-container" {{atts}}>
+        {{#each option in options}}
+            <div class="image-select-option {{isOptionSelected option.value}}" data-value="{{option.value}}">
+                <div class="top-right check" style="display: {{#if (isOptionSelected option.value)}}block{{else}}none{{/if}}">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <div class="top-right circle" style="display: {{#if (isOptionSelected option.value)}}none{{else}}block{{/if}}">
+                    <i class="fa fa-circle-o" aria-hidden="true"></i>
+                </div>
+                <div class="rounded">
+                    <img src="{{option.url}}" width="100%" height="auto">
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</template>
